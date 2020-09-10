@@ -136,8 +136,8 @@ GameObject:
   - component: {fileID: 36144543}
   - component: {fileID: 36144542}
   m_Layer: 0
-  m_Name: Cylinder (48)
-  m_TagString: Untagged
+  m_Name: Tile21
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,7 +154,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 48
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &36144542
 CapsuleCollider:
@@ -232,8 +232,8 @@ GameObject:
   - component: {fileID: 101183110}
   - component: {fileID: 101183109}
   m_Layer: 0
-  m_Name: Cylinder (11)
-  m_TagString: Untagged
+  m_Name: Tile35
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -246,11 +246,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101183107}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.76007485, y: -5.627827, z: -5.815297}
+  m_LocalPosition: {x: -0.7600727, y: -5.627827, z: -5.815297}
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 12
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &101183109
 CapsuleCollider:
@@ -328,8 +328,8 @@ GameObject:
   - component: {fileID: 110012310}
   - component: {fileID: 110012309}
   m_Layer: 0
-  m_Name: Cylinder (27)
-  m_TagString: Untagged
+  m_Name: Tile14
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -346,7 +346,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 27
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &110012309
 CapsuleCollider:
@@ -442,7 +442,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 34
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &110458975
 CapsuleCollider:
@@ -520,8 +520,8 @@ GameObject:
   - component: {fileID: 119828362}
   - component: {fileID: 119828361}
   m_Layer: 0
-  m_Name: Cylinder (15)
-  m_TagString: Untagged
+  m_Name: Tile39
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -534,11 +534,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119828359}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.41, y: -5.627827, z: -1.22}
+  m_LocalPosition: {x: -13.409998, y: -5.627827, z: -1.2199993}
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 16
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &119828361
 CapsuleCollider:
@@ -573,7 +573,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1859edc6fe1bba34fb9abc8a96f2b216, type: 2}
+  - {fileID: 2100000, guid: c7fd50c1b9dd64adfa745bc3c82cffb9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -634,7 +634,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 40
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &185876748
 CapsuleCollider:
@@ -904,8 +904,8 @@ GameObject:
   - component: {fileID: 235957364}
   - component: {fileID: 235957363}
   m_Layer: 0
-  m_Name: Cylinder (21)
-  m_TagString: Untagged
+  m_Name: Tile9
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -922,7 +922,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 21
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &235957363
 CapsuleCollider:
@@ -1000,8 +1000,8 @@ GameObject:
   - component: {fileID: 251400174}
   - component: {fileID: 251400173}
   m_Layer: 0
-  m_Name: Cylinder (9)
-  m_TagString: Untagged
+  m_Name: Tile33
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1018,7 +1018,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 10
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &251400173
 CapsuleCollider:
@@ -1114,7 +1114,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 35
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &253244104
 CapsuleCollider:
@@ -1149,7 +1149,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1859edc6fe1bba34fb9abc8a96f2b216, type: 2}
+  - {fileID: 2100000, guid: c7fd50c1b9dd64adfa745bc3c82cffb9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1192,8 +1192,8 @@ GameObject:
   - component: {fileID: 275879155}
   - component: {fileID: 275879154}
   m_Layer: 0
-  m_Name: Cylinder (55)
-  m_TagString: Untagged
+  m_Name: Tile27
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1210,7 +1210,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 55
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &275879154
 CapsuleCollider:
@@ -1306,7 +1306,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 32
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &322369635
 CapsuleCollider:
@@ -1384,8 +1384,8 @@ GameObject:
   - component: {fileID: 351938818}
   - component: {fileID: 351938817}
   m_Layer: 0
-  m_Name: Cylinder (49)
-  m_TagString: Untagged
+  m_Name: Tile22
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1402,7 +1402,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 49
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &351938817
 CapsuleCollider:
@@ -1590,8 +1590,8 @@ GameObject:
   - component: {fileID: 365518502}
   - component: {fileID: 365518501}
   m_Layer: 0
-  m_Name: Cylinder (10)
-  m_TagString: Untagged
+  m_Name: Tile34
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1604,11 +1604,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365518499}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4899251, y: -5.627827, z: -5.815297}
+  m_LocalPosition: {x: 3.4899256, y: -5.627827, z: -5.815297}
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 11
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &365518501
 CapsuleCollider:
@@ -1704,7 +1704,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 23
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &375231800
 CapsuleCollider:
@@ -1878,8 +1878,8 @@ GameObject:
   - component: {fileID: 416160761}
   - component: {fileID: 416160760}
   m_Layer: 0
-  m_Name: Cylinder (53)
-  m_TagString: Untagged
+  m_Name: Tile25
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1896,7 +1896,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 53
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &416160760
 CapsuleCollider:
@@ -1974,8 +1974,8 @@ GameObject:
   - component: {fileID: 514044739}
   - component: {fileID: 514044738}
   m_Layer: 0
-  m_Name: Cylinder (18)
-  m_TagString: Untagged
+  m_Name: Tile31
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1992,7 +1992,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 19
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &514044738
 CapsuleCollider:
@@ -2088,7 +2088,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 36
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &551183223
 CapsuleCollider:
@@ -2123,7 +2123,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1859edc6fe1bba34fb9abc8a96f2b216, type: 2}
+  - {fileID: 2100000, guid: c7fd50c1b9dd64adfa745bc3c82cffb9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2184,7 +2184,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 37
+  m_RootOrder: 49
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &558425493
 CapsuleCollider:
@@ -2262,8 +2262,8 @@ GameObject:
   - component: {fileID: 570237472}
   - component: {fileID: 570237471}
   m_Layer: 0
-  m_Name: Cylinder (45)
-  m_TagString: Untagged
+  m_Name: Tile18
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2280,7 +2280,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 45
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &570237471
 CapsuleCollider:
@@ -2381,6 +2381,29 @@ Transform:
   - {fileID: 230491435}
   - {fileID: 231897777}
   - {fileID: 1238984409}
+  - {fileID: 235957362}
+  - {fileID: 1894596216}
+  - {fileID: 1764993846}
+  - {fileID: 1309350426}
+  - {fileID: 1254928730}
+  - {fileID: 110012308}
+  - {fileID: 1317978807}
+  - {fileID: 775459172}
+  - {fileID: 884211403}
+  - {fileID: 570237470}
+  - {fileID: 664556633}
+  - {fileID: 862197970}
+  - {fileID: 36144541}
+  - {fileID: 351938816}
+  - {fileID: 825471747}
+  - {fileID: 922535936}
+  - {fileID: 416160759}
+  - {fileID: 1344737327}
+  - {fileID: 275879153}
+  - {fileID: 1531054585}
+  - {fileID: 1572938943}
+  - {fileID: 1676501120}
+  - {fileID: 514044737}
   - {fileID: 610417467}
   - {fileID: 251400172}
   - {fileID: 365518500}
@@ -2389,18 +2412,7 @@ Transform:
   - {fileID: 1801422638}
   - {fileID: 1354421711}
   - {fileID: 119828360}
-  - {fileID: 668157829}
-  - {fileID: 1676501120}
-  - {fileID: 514044737}
-  - {fileID: 1572938943}
-  - {fileID: 235957362}
-  - {fileID: 1894596216}
   - {fileID: 375231799}
-  - {fileID: 1764993846}
-  - {fileID: 1309350426}
-  - {fileID: 1254928730}
-  - {fileID: 110012308}
-  - {fileID: 1317978807}
   - {fileID: 1650036802}
   - {fileID: 577100333}
   - {fileID: 1499777955}
@@ -2414,21 +2426,8 @@ Transform:
   - {fileID: 679786935}
   - {fileID: 185876747}
   - {fileID: 1465917577}
-  - {fileID: 922535936}
-  - {fileID: 775459172}
-  - {fileID: 884211403}
-  - {fileID: 570237470}
-  - {fileID: 664556633}
-  - {fileID: 862197970}
-  - {fileID: 36144541}
-  - {fileID: 351938816}
-  - {fileID: 825471747}
   - {fileID: 803009911}
   - {fileID: 1708083774}
-  - {fileID: 416160759}
-  - {fileID: 1344737327}
-  - {fileID: 275879153}
-  - {fileID: 1531054585}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2463,7 +2462,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 30
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &577100334
 CapsuleCollider:
@@ -2637,8 +2636,8 @@ GameObject:
   - component: {fileID: 610417469}
   - component: {fileID: 610417468}
   m_Layer: 0
-  m_Name: Cylinder (8)
-  m_TagString: Untagged
+  m_Name: Tile32
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2655,7 +2654,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 9
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &610417468
 CapsuleCollider:
@@ -2733,8 +2732,8 @@ GameObject:
   - component: {fileID: 664556635}
   - component: {fileID: 664556634}
   m_Layer: 0
-  m_Name: Cylinder (46)
-  m_TagString: Untagged
+  m_Name: Tile19
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2751,7 +2750,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 46
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &664556634
 CapsuleCollider:
@@ -2816,102 +2815,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664556632}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &668157828
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 668157829}
-  - component: {fileID: 668157832}
-  - component: {fileID: 668157831}
-  - component: {fileID: 668157830}
-  m_Layer: 0
-  m_Name: Cylinder (16)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &668157829
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668157828}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.41, y: -5.627827, z: 3.33}
-  m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
-  m_Children: []
-  m_Father: {fileID: 573706539}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &668157830
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668157828}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!23 &668157831
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668157828}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 1859edc6fe1bba34fb9abc8a96f2b216, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &668157832
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668157828}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &679786934
 GameObject:
   m_ObjectHideFlags: 0
@@ -2943,7 +2846,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 39
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &679786936
 CapsuleCollider:
@@ -3113,8 +3016,8 @@ GameObject:
   - component: {fileID: 775459174}
   - component: {fileID: 775459173}
   m_Layer: 0
-  m_Name: Cylinder (43)
-  m_TagString: Untagged
+  m_Name: Tile16
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3131,7 +3034,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 43
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &775459173
 CapsuleCollider:
@@ -3323,7 +3226,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 51
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &803009912
 CapsuleCollider:
@@ -3401,8 +3304,8 @@ GameObject:
   - component: {fileID: 825471749}
   - component: {fileID: 825471748}
   m_Layer: 0
-  m_Name: Cylinder (50)
-  m_TagString: Untagged
+  m_Name: Tile23
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3419,7 +3322,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 50
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &825471748
 CapsuleCollider:
@@ -3497,8 +3400,8 @@ GameObject:
   - component: {fileID: 862197972}
   - component: {fileID: 862197971}
   m_Layer: 0
-  m_Name: Cylinder (47)
-  m_TagString: Untagged
+  m_Name: Tile20
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3515,7 +3418,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 47
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &862197971
 CapsuleCollider:
@@ -3654,8 +3557,8 @@ GameObject:
   - component: {fileID: 884211405}
   - component: {fileID: 884211404}
   m_Layer: 0
-  m_Name: Cylinder (44)
-  m_TagString: Untagged
+  m_Name: Tile17
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3672,7 +3575,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 44
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &884211404
 CapsuleCollider:
@@ -3750,8 +3653,8 @@ GameObject:
   - component: {fileID: 922535938}
   - component: {fileID: 922535937}
   m_Layer: 0
-  m_Name: Cylinder (42)
-  m_TagString: Untagged
+  m_Name: Tile24
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3768,7 +3671,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 42
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &922535937
 CapsuleCollider:
@@ -3929,8 +3832,8 @@ GameObject:
   - component: {fileID: 1108250481}
   - component: {fileID: 1108250480}
   m_Layer: 0
-  m_Name: Cylinder (12)
-  m_TagString: Untagged
+  m_Name: Tile36
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3947,7 +3850,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 13
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1108250480
 CapsuleCollider:
@@ -4025,8 +3928,8 @@ GameObject:
   - component: {fileID: 1238984411}
   - component: {fileID: 1238984410}
   m_Layer: 0
-  m_Name: Cylinder (7)
-  m_TagString: Untagged
+  m_Name: Tile8
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4217,8 +4120,8 @@ GameObject:
   - component: {fileID: 1254928732}
   - component: {fileID: 1254928731}
   m_Layer: 0
-  m_Name: Cylinder (26)
-  m_TagString: Untagged
+  m_Name: Tile13
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4235,7 +4138,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 26
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1254928731
 CapsuleCollider:
@@ -4313,8 +4216,8 @@ GameObject:
   - component: {fileID: 1309350428}
   - component: {fileID: 1309350427}
   m_Layer: 0
-  m_Name: Cylinder (25)
-  m_TagString: Untagged
+  m_Name: Tile12
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4331,7 +4234,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 25
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1309350427
 CapsuleCollider:
@@ -4409,8 +4312,8 @@ GameObject:
   - component: {fileID: 1317978809}
   - component: {fileID: 1317978808}
   m_Layer: 0
-  m_Name: Cylinder (28)
-  m_TagString: Untagged
+  m_Name: Tile15
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4427,7 +4330,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 28
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1317978808
 CapsuleCollider:
@@ -4462,7 +4365,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1859edc6fe1bba34fb9abc8a96f2b216, type: 2}
+  - {fileID: 2100000, guid: c7fd50c1b9dd64adfa745bc3c82cffb9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4505,8 +4408,8 @@ GameObject:
   - component: {fileID: 1344737329}
   - component: {fileID: 1344737328}
   m_Layer: 0
-  m_Name: Cylinder (54)
-  m_TagString: Untagged
+  m_Name: Tile26
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4523,7 +4426,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 54
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1344737328
 CapsuleCollider:
@@ -4601,8 +4504,8 @@ GameObject:
   - component: {fileID: 1354421713}
   - component: {fileID: 1354421712}
   m_Layer: 0
-  m_Name: Cylinder (14)
-  m_TagString: Untagged
+  m_Name: Tile38
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4615,11 +4518,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1354421710}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.41, y: -5.627827, z: -5.815297}
+  m_LocalPosition: {x: -13.409998, y: -5.627827, z: -5.815297}
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 15
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1354421712
 CapsuleCollider:
@@ -4804,7 +4707,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 41
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1465917578
 CapsuleCollider:
@@ -4839,7 +4742,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1859edc6fe1bba34fb9abc8a96f2b216, type: 2}
+  - {fileID: 2100000, guid: c7fd50c1b9dd64adfa745bc3c82cffb9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4900,7 +4803,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 31
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1499777956
 CapsuleCollider:
@@ -4978,8 +4881,8 @@ GameObject:
   - component: {fileID: 1531054587}
   - component: {fileID: 1531054586}
   m_Layer: 0
-  m_Name: Cylinder (56)
-  m_TagString: Untagged
+  m_Name: Tile28
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4996,7 +4899,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 56
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1531054586
 CapsuleCollider:
@@ -5074,8 +4977,8 @@ GameObject:
   - component: {fileID: 1572938945}
   - component: {fileID: 1572938944}
   m_Layer: 0
-  m_Name: Cylinder (20)
-  m_TagString: Untagged
+  m_Name: Tile29
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5092,7 +4995,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 20
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1572938944
 CapsuleCollider:
@@ -5188,7 +5091,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 29
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1650036803
 CapsuleCollider:
@@ -5266,8 +5169,8 @@ GameObject:
   - component: {fileID: 1676501122}
   - component: {fileID: 1676501121}
   m_Layer: 0
-  m_Name: Cylinder (17)
-  m_TagString: Untagged
+  m_Name: Tile30
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5284,7 +5187,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 18
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1676501121
 CapsuleCollider:
@@ -5380,7 +5283,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 52
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1708083775
 CapsuleCollider:
@@ -5415,7 +5318,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1859edc6fe1bba34fb9abc8a96f2b216, type: 2}
+  - {fileID: 2100000, guid: c7fd50c1b9dd64adfa745bc3c82cffb9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5476,7 +5379,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 38
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1734732989
 CapsuleCollider:
@@ -5554,8 +5457,8 @@ GameObject:
   - component: {fileID: 1764993848}
   - component: {fileID: 1764993847}
   m_Layer: 0
-  m_Name: Cylinder (24)
-  m_TagString: Untagged
+  m_Name: Tile11
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5572,7 +5475,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 24
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1764993847
 CapsuleCollider:
@@ -5607,7 +5510,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1859edc6fe1bba34fb9abc8a96f2b216, type: 2}
+  - {fileID: 2100000, guid: c7fd50c1b9dd64adfa745bc3c82cffb9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5650,8 +5553,8 @@ GameObject:
   - component: {fileID: 1801422640}
   - component: {fileID: 1801422639}
   m_Layer: 0
-  m_Name: Cylinder (13)
-  m_TagString: Untagged
+  m_Name: Tile37
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5664,11 +5567,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801422637}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.010075, y: -5.627827, z: -5.815297}
+  m_LocalPosition: {x: -9.010073, y: -5.627827, z: -5.815297}
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 14
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1801422639
 CapsuleCollider:
@@ -5860,7 +5763,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 33
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1883748224
 CapsuleCollider:
@@ -5938,8 +5841,8 @@ GameObject:
   - component: {fileID: 1894596218}
   - component: {fileID: 1894596217}
   m_Layer: 0
-  m_Name: Cylinder (22)
-  m_TagString: Untagged
+  m_Name: Tile10
+  m_TagString: Tile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5956,7 +5859,7 @@ Transform:
   m_LocalScale: {x: 2.3173, y: 0.16074803, z: 2.3173}
   m_Children: []
   m_Father: {fileID: 573706539}
-  m_RootOrder: 22
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1894596217
 CapsuleCollider:
@@ -6135,8 +6038,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a305cb2b7ba4ca98fe8af74203b0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diceRoll: 7
+  diceRoll: 9
   currPos: 0
+  choiceTile: 1
 --- !u!1001 &7966037750708226427
 PrefabInstance:
   m_ObjectHideFlags: 0
