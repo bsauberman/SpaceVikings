@@ -33,7 +33,7 @@ public class Try3Movement : MonoBehaviour
                 if(i == 6) {
                     print("Which way would you like to go?");
                     print("A = Up    S = Right");
-                    yield return new WaitForSeconds(3);
+                    yield return waitForKeyPress(KeyCode.L);
                     if (choiceTile == 0) {
                     }
                     else if (choiceTile == 1) {
@@ -41,13 +41,41 @@ public class Try3Movement : MonoBehaviour
                         i = 30;
                         currPos = 30;
                     } 
-                    
+                }
+                if (i == 10) {
+                    print("Which way would you like to go?");
+                    print("A = Up    S = Right");
+                    yield return waitForKeyPress(KeyCode.L);
+                    if (choiceTile == 0) {
+                    }
+                    else if (choiceTile == 1) {
+                        diceRoll = diceRoll - count;
+                        i = 38;
+                        currPos = 38;
+                    } 
                 }
                 count++; 
 
         }
         currPos = x + 1;
     }
+
+
+    private IEnumerator waitForKeyPress(KeyCode key)
+{
+    bool done = false;
+    while(!done) // essentially a "while true", but with a bool to break out naturally
+    {
+        if(Input.GetKeyDown(key))
+        {
+            done = true; // breaks the loop
+        }
+        yield return null; // wait until next frame, then continue execution from here (loop continues)
+    }
+ 
+    // now this function returns
+}
+    
 
      
 
