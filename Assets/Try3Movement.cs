@@ -13,7 +13,6 @@ public class Try3Movement : MonoBehaviour
 
        [SerializeField] public int choiceTile = 0;
 
-//       Color white = new Color(1,1,1,1);
 
 
     // Start is called before the first frame update
@@ -22,9 +21,10 @@ public class Try3Movement : MonoBehaviour
             int x = 0;
             tileArray = GameObject.FindGameObjectsWithTag("Tile"); 
             int count = 0;
+            int i = currPos;
+          
 
-       
-        for(int i = currPos; i<= currPos + (diceRoll - 1); i++ ){
+        for (int j = 0; j < diceRoll; j++) {
 
                 yield return new WaitForSeconds(1);
                 transform.position = tileArray[i].transform.position;
@@ -37,25 +37,58 @@ public class Try3Movement : MonoBehaviour
                     if (choiceTile == 0) {
                     }
                     else if (choiceTile == 1) {
-                        diceRoll = diceRoll - count;
                         i = 30;
-                        currPos = 30;
                     } 
                 }
-                if (i == 10) {
+                else if (i == 10) {
                     print("Which way would you like to go?");
                     print("A = Up    S = Right");
                     yield return waitForKeyPress(KeyCode.L);
                     if (choiceTile == 0) {
                     }
                     else if (choiceTile == 1) {
-                        diceRoll = diceRoll - count;
                         i = 38;
-                        currPos = 38;
                     } 
                 }
-                count++; 
+                else if(i == 14) {
+                    print("Which way would you like to go?");
+                    print("A = Right    S = Down");
+                    yield return waitForKeyPress(KeyCode.L);
+                    if (choiceTile == 0) {
+                    }
+                    else if (choiceTile == 1) {
+                        i = 45;
+                    } 
+                }
+                else if(i == 44) {
+                    print("Which way would you like to go?");
+                    print("A = Right    S = Down");
+                    yield return waitForKeyPress(KeyCode.L);
+                    if (choiceTile == 0) {
+                        i = 52;
+                    }
+                    else if (choiceTile == 1) {
+                        i = 44;
+                    } 
+                }
 
+                else if (i == 38) {
+                    i = 27;
+                }
+                else if (i == 30) {
+                    i = -1;
+                }
+                else if (i == 45) {
+                    i = 36;
+                }
+                else if (i == 52) {
+                    i = 22;
+                }
+                else if (i == 54) {
+                    i = 22;
+                }
+                count++; 
+                i++;
         }
         currPos = x + 1;
     }
@@ -64,16 +97,15 @@ public class Try3Movement : MonoBehaviour
     private IEnumerator waitForKeyPress(KeyCode key)
 {
     bool done = false;
-    while(!done) // essentially a "while true", but with a bool to break out naturally
+    while(!done)
     {
         if(Input.GetKeyDown(key))
         {
-            done = true; // breaks the loop
+            done = true; 
         }
-        yield return null; // wait until next frame, then continue execution from here (loop continues)
+        yield return null; 
     }
  
-    // now this function returns
 }
     
 
