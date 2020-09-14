@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using static System.Collections.IEnumerable;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,14 +7,20 @@ public class Try3Movement : MonoBehaviour
 {
 
     public int diceRoll;
+    GameObject[] tileArray = new GameObject[57];
+        
+
+    // Player Information
     [SerializeField] public int coins = 0;
+       
+    [SerializeField] public int currPos = 0;
 
-       GameObject[] tileArray = new GameObject[57];
-       [SerializeField] public int currPos = 0;
+    [SerializeField] public int choiceTile = 0;
 
-       [SerializeField] public int choiceTile = 0;
-
-       Color blue = new Color {0,0,1,1};
+    // Colors
+       Color blue = new Color (0,0,1,1);
+       Color red = new Color (1,0,0,1);
+       Color white = new Color (1,1,1,1);
 
 
 
@@ -26,9 +31,9 @@ public class Try3Movement : MonoBehaviour
 
             int x = 0;
             tileArray = GameObject.FindGameObjectsWithTag("Tile"); 
-            int count = 0;
             int i = currPos;
             bool turn = true;
+         //   int indicator = 0;
           
 while (turn) {
         for (int j = 0; j < diceRoll; j++) {
@@ -38,7 +43,10 @@ while (turn) {
                 x = i;
 
                 if(i == 6) {
-                    print("Which way would you like to go?");
+                    if (j == diceRoll - 1) {
+                        // do nothing
+                    } else { 
+                        print("Which way would you like to go?");
                     print("A = Up    S = Right");
                     yield return waitForKeyPress(KeyCode.L);
                     if (choiceTile == 0) {
@@ -46,8 +54,12 @@ while (turn) {
                     else if (choiceTile == 1) {
                         i = 30;
                     } 
+                    }
                 }
                 else if (i == 10) {
+                    if (j == diceRoll - 1) {
+                        // do nothing
+                    } else { 
                     print("Which way would you like to go?");
                     print("A = Up    S = Right");
                     yield return waitForKeyPress(KeyCode.L);
@@ -56,8 +68,12 @@ while (turn) {
                     else if (choiceTile == 1) {
                         i = 38;
                     } 
+                    }
                 }
                 else if(i == 14) {
+                    if (j == diceRoll - 1) {
+                        // do nothing
+                    } else { 
                     print("Which way would you like to go?");
                     print("A = Right    S = Down");
                     yield return waitForKeyPress(KeyCode.L);
@@ -66,8 +82,12 @@ while (turn) {
                     else if (choiceTile == 1) {
                         i = 45;
                     } 
+                    }
                 }
                 else if(i == 44) {
+                    if (j == diceRoll - 1) {
+                        // do nothing
+                    } else { 
                     print("Which way would you like to go?");
                     print("A = Right    S = Down");
                     yield return waitForKeyPress(KeyCode.L);
@@ -77,6 +97,7 @@ while (turn) {
                     else if (choiceTile == 1) {
                         i = 44;
                     } 
+                    }
                 }
 
                 else if (i == 38) {
@@ -94,22 +115,24 @@ while (turn) {
                 else if (i == 54) {
                     i = 22;
                 }
-                count++; 
                 i++;
         }
+        // might need to take off plus one to fix future rolls
         currPos = x + 1;
         turn = false;
     }
 
-    checkResult(currPos);
-
+    checkTileAction(x);
 
 }
 
-private void checkResult(int currPos) {
+private void checkTileAction(int currPos) {
 
 if (tileArray[currPos].GetComponent<Renderer>().material.color == blue) {
         coins = coins + 3;
+    }
+else if (tileArray[currPos].GetComponent<Renderer>().material.color == white) {
+        coins = coins - 3;
     }
 
 }

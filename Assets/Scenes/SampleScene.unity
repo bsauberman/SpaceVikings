@@ -6038,6 +6038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6a305cb2b7ba4ca98fe8af74203b0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diceRoll: 5
+  diceRoll: 11
+  coins: 0
   currPos: 0
   choiceTile: 1
