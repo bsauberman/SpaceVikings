@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using static System.Collections.IEnumerable;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,23 +8,29 @@ public class Try3Movement : MonoBehaviour
 {
 
     public int diceRoll;
+    [SerializeField] public int coins = 0;
 
        GameObject[] tileArray = new GameObject[57];
        [SerializeField] public int currPos = 0;
 
        [SerializeField] public int choiceTile = 0;
 
+       Color blue = new Color {0,0,1,1};
+
 
 
     // Start is called before the first frame update
     IEnumerator Start()
     {
+        
+
             int x = 0;
             tileArray = GameObject.FindGameObjectsWithTag("Tile"); 
             int count = 0;
             int i = currPos;
+            bool turn = true;
           
-
+while (turn) {
         for (int j = 0; j < diceRoll; j++) {
 
                 yield return new WaitForSeconds(1);
@@ -91,7 +98,21 @@ public class Try3Movement : MonoBehaviour
                 i++;
         }
         currPos = x + 1;
+        turn = false;
     }
+
+    checkResult(currPos);
+
+
+}
+
+private void checkResult(int currPos) {
+
+if (tileArray[currPos].GetComponent<Renderer>().material.color == blue) {
+        coins = coins + 3;
+    }
+
+}
 
 
     private IEnumerator waitForKeyPress(KeyCode key)
@@ -107,6 +128,7 @@ public class Try3Movement : MonoBehaviour
     }
  
 }
+ 
     
 
      
