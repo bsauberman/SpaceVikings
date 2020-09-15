@@ -155,9 +155,6 @@ else if (tileArray[currPos].GetComponent<Renderer>().material.color == white) {
 }
  
     
-
-     
-
     // Update is called once per frame
     void Update()
     {
