@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [DisallowMultipleComponent]
-public class Try3Movement : MonoBehaviour
+public class player2movement : MonoBehaviour
 {
 
     public int diceRoll;
@@ -24,19 +24,16 @@ public class Try3Movement : MonoBehaviour
        Color white = new Color (1,1,1,1);
 
 
+
     // Start is called before the first frame update
     IEnumerator Start()
     {
-    GameObject player2 = GameObject.Find("player2");
-    player2.GetComponent<player2movement>().enabled = false;
-
-
+            
             int x = 0;
             tileArray = GameObject.FindGameObjectsWithTag("Tile"); 
-while (round) {            
+while (round) {
             int i = currPos;
             bool turn = true;
-         //   int indicator = 0;
           
 while (turn) {
         for (int j = 0; j < diceRoll; j++) {
@@ -127,15 +124,7 @@ while (turn) {
 
     checkTileAction(x);
     round = false;
-    
- //   GameObject player2 = GameObject.Find("player2");
-
-  //  PlayerScript playerScript = player2.GetComponent<PlayerScript>();
-  //  player2.round = true;
-    
-   // GameObject.Find("player2").GetComponent<player2movement>().round = true;
-    player2.GetComponent<player2movement>().enabled = true;
-}
+    }
 
 }
 
