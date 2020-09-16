@@ -23,10 +23,14 @@ public class Try3Movement : MonoBehaviour
        Color red = new Color (1,0,0,1);
        Color white = new Color (1,1,1,1);
 
+       public GameObject currTile;
+
 
     // Start is called before the first frame update
     IEnumerator Start()
     {
+        currTile = GameObject.Find("StartingBlock");
+      
 
             int x = 0;
             tileArray = GameObject.FindGameObjectsWithTag("Tile"); 
@@ -36,7 +40,28 @@ while (round) {
           
 while (turn) {
         for (int j = 0; j < diceRoll; j++) {
-
+            if ( currTile.GetComponent<tileHolder>().checker == 1) {
+                print("Which way would you like to go?");
+                print("A = Up    S = Right");
+                yield return waitForKeyPress(KeyCode.L);
+                if (choiceTile == 0) {
+                    yield return new WaitForSeconds(1);
+                    transform.position = currTile.GetComponent<tileHolder>().nextTile.transform.position;
+                    currTile = currTile.GetComponent<tileHolder>().nextTile;
+                    }
+                    else if (choiceTile == 1) {
+                        yield return new WaitForSeconds(1);
+                        transform.position = currTile.GetComponent<tileHolder>().otherTile.transform.position;
+                        currTile = currTile.GetComponent<tileHolder>().otherTile;
+                    } 
+            }
+            else {
+            yield return new WaitForSeconds(1);
+            transform.position = currTile.GetComponent<tileHolder>().nextTile.transform.position;
+            currTile = currTile.GetComponent<tileHolder>().nextTile;
+            }
+            currPos++;
+/*
                 yield return new WaitForSeconds(1);
                 transform.position = tileArray[i].transform.position;
                 x = i;
@@ -115,9 +140,10 @@ while (turn) {
                     i = 22;
                 }
                 i++;
+                */
         }
         // might need to take off plus one to fix future rolls
-        currPos = x + 1;
+      //  currPos = x + 1;
         turn = false;
     }
 

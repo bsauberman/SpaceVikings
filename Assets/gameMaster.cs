@@ -21,7 +21,6 @@ public class gameMaster : MonoBehaviour
    if (turnVariable == 1) {
         player1.GetComponent<Try3Movement>().enabled = true;
    }
-
     if (turnVariable == 2){
             player1.GetComponent<Try3Movement>().enabled = false;
             player2.GetComponent<Try3Movement>().enabled = true;
@@ -34,6 +33,11 @@ public class gameMaster : MonoBehaviour
             player3.GetComponent<Try3Movement>().enabled = false;
             player4.GetComponent<Try3Movement>().enabled = true;
     }
+  /*  if (turnVariable == 5) {
+        player4.GetComponent<Try3Movement>().enabled = false;
+        SceneManager.LoadScene("Minigame1");
+    }
+    */
     
         
     }
