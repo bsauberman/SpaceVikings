@@ -17,21 +17,35 @@ public class gameMaster : MonoBehaviour
     GameObject player2 = GameObject.Find("player2");
     GameObject player3 = GameObject.Find("player3");
     GameObject player4 = GameObject.Find("player4");
+    GameObject playerCamera = GameObject.Find("playerCamera");
+    GameObject player2Camera = GameObject.Find("player2Camera");
+    GameObject player3Camera = GameObject.Find("player3Camera");
+    GameObject player4Camera = GameObject.Find("player4Camera");
 
    if (turnVariable == 1) {
         player1.GetComponent<Try3Movement>().enabled = true;
-   }
+        playerCamera.GetComponent<Camera>().enabled = true; 
+        }
     if (turnVariable == 2){
             player1.GetComponent<Try3Movement>().enabled = false;
             player2.GetComponent<Try3Movement>().enabled = true;
+
+            playerCamera.GetComponent<Camera>().enabled = false; 
+            player2Camera.GetComponent<Camera>().enabled = true; 
         }
     if (turnVariable == 3) {
             player2.GetComponent<Try3Movement>().enabled = false;
             player3.GetComponent<Try3Movement>().enabled = true;
+
+            player2Camera.GetComponent<Camera>().enabled = false; 
+            player3Camera.GetComponent<Camera>().enabled = true; 
     }
     if (turnVariable == 4) {
             player3.GetComponent<Try3Movement>().enabled = false;
             player4.GetComponent<Try3Movement>().enabled = true;
+
+            player3Camera.GetComponent<Camera>().enabled = false; 
+            player4Camera.GetComponent<Camera>().enabled = true; 
     }
   /*  if (turnVariable == 5) {
         player4.GetComponent<Try3Movement>().enabled = false;

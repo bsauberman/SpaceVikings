@@ -18,12 +18,6 @@ public class Try3Movement : MonoBehaviour
     [SerializeField] public int choiceTile = 0;
 
     public GameObject currTile;
-
-
-
-
-    public int x = 0;
-
     public float speed = 7.0f;
     public GameObject target;
 
@@ -38,12 +32,10 @@ public class Try3Movement : MonoBehaviour
 
 
 while (round) {            
-            int i = currPos;
             bool turn = true;
           
 while (turn) {
         for (int j = 0; j < diceRoll; j++) {
-            x = 0;
             if ( currTile.GetComponent<tileHolder>().checker == 1) {
                 print("Which way would you like to go?");
                 print("A = Up    S = Right");
