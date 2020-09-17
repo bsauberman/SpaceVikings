@@ -114,6 +114,11 @@ private void checkTileAction(GameObject currTile) {
             choiceTile = 1;
         }
 
+        Vector3 direction = target.transform.position - transform.position;
+        Quaternion rotation = Quaternion.LookRotation(direction);
+        transform.rotation = rotation;
+
+
     }
 
 }
