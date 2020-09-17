@@ -17,43 +17,54 @@ public class Try3Movement : MonoBehaviour
 
     [SerializeField] public int choiceTile = 0;
 
-    // Colors
-       Color blue = new Color (0,0,1,1);
-       Color red = new Color (1,0,0,1);
-       Color white = new Color (1,1,1,1);
+    public GameObject currTile;
 
-       public GameObject currTile;
+
+
+
+    public int x = 0;
+
+    public float speed = 7.0f;
+    public GameObject target;
+
 
 
     // Start is called before the first frame update
     IEnumerator Start()
     {
         currTile = GameObject.Find("StartingBlock");
-      
+        target = currTile.GetComponent<tileHolder>().nextTile;
+
+
+
 while (round) {            
             int i = currPos;
             bool turn = true;
           
 while (turn) {
         for (int j = 0; j < diceRoll; j++) {
+            x = 0;
             if ( currTile.GetComponent<tileHolder>().checker == 1) {
                 print("Which way would you like to go?");
                 print("A = Up    S = Right");
                 yield return waitForKeyPress(KeyCode.L);
                 if (choiceTile == 0) {
+                    target = currTile.GetComponent<tileHolder>().nextTile;
                     yield return new WaitForSeconds(1);
-                    transform.position = currTile.GetComponent<tileHolder>().nextTile.transform.position;
+                   // transform.position = currTile.GetComponent<tileHolder>().nextTile.transform.position;
                     currTile = currTile.GetComponent<tileHolder>().nextTile;
                     }
                     else if (choiceTile == 1) {
+                       target = currTile.GetComponent<tileHolder>().otherTile;
                         yield return new WaitForSeconds(1);
-                        transform.position = currTile.GetComponent<tileHolder>().otherTile.transform.position;
+                       // transform.position = currTile.GetComponent<tileHolder>().otherTile.transform.position;
                         currTile = currTile.GetComponent<tileHolder>().otherTile;
                     } 
             }
             else {
+            target = currTile.GetComponent<tileHolder>().nextTile;
             yield return new WaitForSeconds(1);
-            transform.position = currTile.GetComponent<tileHolder>().nextTile.transform.position;
+           // transform.position = currTile.GetComponent<tileHolder>().nextTile.transform.position;
             currTile = currTile.GetComponent<tileHolder>().nextTile;
             }
             currPos++;
@@ -98,6 +109,13 @@ private void checkTileAction(GameObject currTile) {
     // Update is called once per frame
     void Update()
     {
+        float step = speed * Time.deltaTime;
+
+        if (Vector3.Distance(transform.position, target.transform.position) > 0.001f)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, step);
+        }
+
         if ((Input.GetKeyDown (KeyCode.A))) {
             choiceTile = 0;
         } else if ((Input.GetKeyDown (KeyCode.S))) {
