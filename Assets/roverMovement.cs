@@ -6,7 +6,7 @@ public class roverMovement : MonoBehaviour
 {
     public float speed = 10.0f;
     public float rotationSpeed = 100.0f;
-    [SerializeField] float upThrust = 35f;
+    [SerializeField] float upThrust = 20f;
 
     Rigidbody rigidbody;
 
@@ -28,7 +28,7 @@ public class roverMovement : MonoBehaviour
         transform.Rotate(0,rotation,0);
 
         if(Input.GetButton("Fire1")) {
-            this.rigidbody.AddRelativeForce(Vector3.up * upThrust);
+            this.rigidbody.AddRelativeForce(Vector3.left * upThrust);
         }
         
 
