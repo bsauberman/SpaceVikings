@@ -54,10 +54,10 @@ while (turn) {
                     } 
             }
             else {
-            target = currTile.GetComponent<tileHolder>().nextTile;
-            yield return new WaitForSeconds(1);
-           // transform.position = currTile.GetComponent<tileHolder>().nextTile.transform.position;
-            currTile = currTile.GetComponent<tileHolder>().nextTile;
+                target = currTile.GetComponent<tileHolder>().nextTile;
+                yield return new WaitForSeconds(1);
+                // transform.position = currTile.GetComponent<tileHolder>().nextTile.transform.position;
+                currTile = currTile.GetComponent<tileHolder>().nextTile;
             }
             currPos++;
 
