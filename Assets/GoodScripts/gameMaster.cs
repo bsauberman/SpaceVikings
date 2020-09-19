@@ -52,6 +52,7 @@ public class gameMaster : MonoBehaviour
     }
     if (turnVariable == 5) {
         player4.GetComponent<Try3Movement>().enabled = false;
+        player4Camera.GetComponent<Camera>().enabled = false;
         Invoke ("LoadMiniGame", 1.0f);
     }
     if (turnVariable == 6) {

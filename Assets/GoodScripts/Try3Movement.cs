@@ -15,7 +15,7 @@ public class Try3Movement : MonoBehaviour
        
     [SerializeField] public int currPos = 0;
 
-    [SerializeField] public int choiceTile = 0;
+    [SerializeField] public int dirChoice = 0;
 
     public GameObject currTile;
     public float speed = 7.0f;
@@ -39,13 +39,13 @@ while (turn) {
                 print("Which way would you like to go?");
                 print("A = Up    S = Right");
                 yield return waitForKeyPress(KeyCode.L);
-                if (choiceTile == 0) {
+                if (dirChoice == 0) {
                     target = currTile.GetComponent<tileHolder>().nextTile;
                     yield return new WaitForSeconds(1);
                    // transform.position = currTile.GetComponent<tileHolder>().nextTile.transform.position;
                     currTile = currTile.GetComponent<tileHolder>().nextTile;
                     }
-                    else if (choiceTile == 1) {
+                    else if (dirChoice == 1) {
                        target = currTile.GetComponent<tileHolder>().otherTile;
                         yield return new WaitForSeconds(1);
                        // transform.position = currTile.GetComponent<tileHolder>().otherTile.transform.position;
@@ -109,9 +109,9 @@ private void checkTileAction(GameObject currTile) {
         }
 
         if ((Input.GetKeyDown (KeyCode.A))) {
-            choiceTile = 0;
+            dirChoice = 0;
         } else if ((Input.GetKeyDown (KeyCode.S))) {
-            choiceTile = 1;
+            dirChoice = 1;
         }
 
         Vector3 direction = target.transform.position - transform.position;
