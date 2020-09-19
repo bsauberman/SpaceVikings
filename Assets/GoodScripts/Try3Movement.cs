@@ -26,9 +26,8 @@ public class Try3Movement : MonoBehaviour
     // Start is called before the first frame update
     IEnumerator Start()
     {
-        currTile = GameObject.Find("StartingBlock");
-        target = currTile.GetComponent<tileHolder>().nextTile;
-
+        DontDestroyOnLoad(this.gameObject);
+        this.target = currTile.GetComponent<tileHolder>().nextTile;
 
 
 while (round) {            
@@ -56,7 +55,7 @@ while (turn) {
             else {
                 target = currTile.GetComponent<tileHolder>().nextTile;
                 yield return new WaitForSeconds(1);
-                // transform.position = currTile.GetComponent<tileHolder>().nextTile.transform.position;
+                transform.position = currTile.GetComponent<tileHolder>().nextTile.transform.position;
                 currTile = currTile.GetComponent<tileHolder>().nextTile;
             }
             currPos++;
@@ -66,6 +65,7 @@ while (turn) {
     }
 
     checkTileAction(currTile);
+    this.currTile = currTile;
     round = false;
     GameObject.Find("GameMaster").GetComponent<gameMaster>().y ++;
    

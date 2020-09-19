@@ -12,6 +12,7 @@ public class gameMaster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
 
     GameObject player1 = GameObject.Find("player1");    
     GameObject player2 = GameObject.Find("player2");
@@ -21,6 +22,8 @@ public class gameMaster : MonoBehaviour
     GameObject player2Camera = GameObject.Find("player2Camera");
     GameObject player3Camera = GameObject.Find("player3Camera");
     GameObject player4Camera = GameObject.Find("player4Camera");
+
+    GameObject player1rover = GameObject.Find("player1rover");
 
    if (turnVariable == 1) {
         player1.GetComponent<Try3Movement>().enabled = true;
@@ -47,13 +50,24 @@ public class gameMaster : MonoBehaviour
             player3Camera.GetComponent<Camera>().enabled = false; 
             player4Camera.GetComponent<Camera>().enabled = true; 
     }
-  /*  if (turnVariable == 5) {
+    if (turnVariable == 5) {
         player4.GetComponent<Try3Movement>().enabled = false;
-        SceneManager.LoadScene("Minigame1");
+        Invoke ("LoadMiniGame", 1.0f);
     }
-    */
+    if (turnVariable == 6) {
+        y = 1;
+        Invoke ("LoadGameBoard", 1.0f);
+    }
+    
     
         
+    }
+
+    void LoadMiniGame() {
+        SceneManager.LoadScene("Minigame1");
+    }
+    void LoadGameBoard() {
+        SceneManager.LoadScene("GameBoard");
     }
 
     // Update is called once per frame
@@ -63,6 +77,9 @@ public class gameMaster : MonoBehaviour
         if (turnVariable != y){
             turnVariable = y;
             Start();
+        }
+        if(GameObject.Find("player1rover").GetComponent<roverMovement>().laps >= 1) {
+            y = 6;
         }
     
         

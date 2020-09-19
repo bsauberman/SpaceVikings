@@ -7,13 +7,14 @@ public class roverMovement : MonoBehaviour
     public float speed = 10.0f;
     public float rotationSpeed = 100.0f;
     [SerializeField] float upThrust = 20f;
-
     Rigidbody rigidbody;
+    public int laps = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+
         
     }
 
@@ -29,9 +30,13 @@ public class roverMovement : MonoBehaviour
 
         if(Input.GetButton("Fire1")) {
             this.rigidbody.AddRelativeForce(Vector3.left * upThrust);
+            laps++;
         }
         
-
     }
 
+
 }
+
+
+

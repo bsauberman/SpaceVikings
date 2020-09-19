@@ -7,6 +7,7 @@ public class followPlayer : MonoBehaviour
  [SerializeField] public GameObject player;
       public float cameraHeight = 10.0f;
       public float cameraDepth = 12.0f;
+
   
       void Update() {
           Vector3 pos = player.transform.position;
