@@ -20,15 +20,43 @@ public class Try3Movement : MonoBehaviour
     public GameObject currTile;
     public float speed = 7.0f;
     public GameObject target;
+    public int playerNum = 0;
 
+    static GameObject cPlayer1; 
+    static GameObject cPlayer2; 
+    static GameObject cPlayer3; 
+    static GameObject cPlayer4; 
 
 
     // Start is called before the first frame update
-    IEnumerator Start()
+    IEnumerator Start() 
     {
-        DontDestroyOnLoad(this.gameObject);
-        this.target = currTile.GetComponent<tileHolder>().nextTile;
+        if(cPlayer1 == null) {
+            cPlayer1 = this.gameObject;
+            GameObject.DontDestroyOnLoad(this.gameObject);
 
+        }
+        else if (cPlayer2 == null) {
+            cPlayer2 = this.gameObject;
+            GameObject.DontDestroyOnLoad(this.gameObject);
+
+        }
+        else if (cPlayer3 == null) {
+            cPlayer3 = this.gameObject;
+            GameObject.DontDestroyOnLoad(this.gameObject);
+
+        }
+        else if (cPlayer4 == null) {
+            cPlayer4 = this.gameObject;
+            GameObject.DontDestroyOnLoad(this.gameObject);
+        }
+        else {
+            Destroy(this.gameObject);
+        }
+                
+        // DontDestroyOnLoad(this.gameObject);
+        this.target = currTile.GetComponent<tileHolder>().nextTile;
+        currTile.GetComponent<tileHolder>().isOccupied--;
 
 while (round) {            
             bool turn = true;
@@ -61,6 +89,12 @@ while (turn) {
             currPos++;
 
         }
+        currTile.GetComponent<tileHolder>().isOccupied++;
+        PlayerPrefs.SetFloat("p"+playerNum+"x", transform.position.x);
+        PlayerPrefs.SetFloat("p"+playerNum+"y", transform.position.y);
+        PlayerPrefs.SetFloat("p"+playerNum+"z", transform.position.z);
+        print("Player " + playerNum + " set");
+
         turn = false;
     }
 
@@ -101,6 +135,7 @@ private void checkTileAction(GameObject currTile) {
     // Update is called once per frame
     void Update()
     {
+        
         float step = speed * Time.deltaTime;
 
         if (Vector3.Distance(transform.position, target.transform.position) > 0.001f)
