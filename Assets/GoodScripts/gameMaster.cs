@@ -12,7 +12,7 @@ public class gameMaster : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // DontDestroyOnLoad(this.gameObject);
+       //  DontDestroyOnLoad(this.gameObject);
 
     GameObject player1 = GameObject.Find("player1");    
     GameObject player2 = GameObject.Find("player2");
@@ -26,6 +26,7 @@ public class gameMaster : MonoBehaviour
     GameObject player1rover = GameObject.Find("player1rover");
 
    if (turnVariable == 1) {
+        LoadGameStuff(player1, player2, player3, player4);
         player1.GetComponent<Try3Movement>().enabled = true;
         playerCamera.GetComponent<Camera>().enabled = true; 
         }
@@ -56,28 +57,26 @@ public class gameMaster : MonoBehaviour
         Invoke ("LoadMiniGame", 1.0f);
     }
     if (turnVariable == 6) {
-        //LoadGameStuff(player1, player2, player3, player4);
         Invoke ("LoadGameBoard", 1.0f);
         y = 1;
     }
     
     
-        
     }
 
     void LoadGameStuff(GameObject player1, GameObject player2, 
     GameObject player3, GameObject player4) {
-        player1.transform.position = new Vector3((PlayerPrefs.GetFloat("p2x")), 
-            (PlayerPrefs.GetFloat("p2y")),(PlayerPrefs.GetFloat("p2z")));
+        player1.transform.position = new Vector3((PlayerPrefs.GetFloat("p1x", 0)), 
+            (PlayerPrefs.GetFloat("p1y", 0)),(PlayerPrefs.GetFloat("p1z", 28)));
 
-        player2.transform.position = new Vector3((PlayerPrefs.GetFloat("p2x")), 
-            (PlayerPrefs.GetFloat("p2y")),(PlayerPrefs.GetFloat("p2z")));                                                                             
+        player2.transform.position = new Vector3((PlayerPrefs.GetFloat("p2x", -4)), 
+            (PlayerPrefs.GetFloat("p2y", 0)),(PlayerPrefs.GetFloat("p2z", 28)));                                                                             
 
-        player3.transform.position = new Vector3((PlayerPrefs.GetFloat("p3x")), 
-            (PlayerPrefs.GetFloat("p3y")),(PlayerPrefs.GetFloat("p3z")));
+        player3.transform.position = new Vector3((PlayerPrefs.GetFloat("p3x", -6)), 
+            (PlayerPrefs.GetFloat("p3y", 0)),(PlayerPrefs.GetFloat("p3z", 28)));
 
-         player4.transform.position = new Vector3((PlayerPrefs.GetFloat("p4x")), 
-            (PlayerPrefs.GetFloat("p4y")),(PlayerPrefs.GetFloat("p4z")));
+         player4.transform.position = new Vector3((PlayerPrefs.GetFloat("p4x", -8)), 
+            (PlayerPrefs.GetFloat("p4y", 0)),(PlayerPrefs.GetFloat("p4z", 28)));
     }
 
     void LoadMiniGame() {

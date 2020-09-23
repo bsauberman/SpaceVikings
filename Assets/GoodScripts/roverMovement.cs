@@ -17,9 +17,8 @@ public class roverMovement : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody>();
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("GameBoard");
+        GameObject.Find("GameMaster").GetComponent<gameMaster>().y = 6;
 
-        
     }
 
     // Update is called once per frame

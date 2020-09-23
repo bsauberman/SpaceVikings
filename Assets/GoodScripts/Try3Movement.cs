@@ -22,39 +22,58 @@ public class Try3Movement : MonoBehaviour
     public GameObject target;
     public int playerNum = 0;
 
-    static GameObject cPlayer1; 
-    static GameObject cPlayer2; 
-    static GameObject cPlayer3; 
-    static GameObject cPlayer4; 
+    // static GameObject cPlayer1; 
+    // static GameObject cPlayer2; 
+    // static GameObject cPlayer3; 
+    // static GameObject cPlayer4; 
 
 
     // Start is called before the first frame update
     IEnumerator Start() 
     {
-        if(cPlayer1 == null) {
-            cPlayer1 = this.gameObject;
-            GameObject.DontDestroyOnLoad(this.gameObject);
+        if (PlayerPrefs.GetInt("round") == 0) {
+            PlayerPrefs.DeleteAll();
+        }
+        // if(cPlayer1 == null) {
+        //     cPlayer1 = this.gameObject;
+        //     GameObject.DontDestroyOnLoad(this.gameObject);
 
-        }
-        else if (cPlayer2 == null) {
-            cPlayer2 = this.gameObject;
-            GameObject.DontDestroyOnLoad(this.gameObject);
+        // }
+        // else if (cPlayer2 == null) {
+        //     cPlayer2 = this.gameObject;
+        //     GameObject.DontDestroyOnLoad(this.gameObject);
 
-        }
-        else if (cPlayer3 == null) {
-            cPlayer3 = this.gameObject;
-            GameObject.DontDestroyOnLoad(this.gameObject);
+        // }
+        // else if (cPlayer3 == null) {
+        //     cPlayer3 = this.gameObject;
+        //     GameObject.DontDestroyOnLoad(this.gameObject);
 
-        }
-        else if (cPlayer4 == null) {
-            cPlayer4 = this.gameObject;
-            GameObject.DontDestroyOnLoad(this.gameObject);
-        }
-        else {
-            Destroy(this.gameObject);
-        }
+        // }
+        // else if (cPlayer4 == null) {
+        //     cPlayer4 = this.gameObject;
+        //     GameObject.DontDestroyOnLoad(this.gameObject);
+        // }
+        // else {
+        //     Destroy(this.gameObject);
+        // }
                 
         // DontDestroyOnLoad(this.gameObject);
+        // if (playerNum == 1) {
+        //     transform.position = new Vector3((PlayerPrefs.GetFloat("p1x")), 
+        //     (PlayerPrefs.GetFloat("p1y")),(PlayerPrefs.GetFloat("p1z")));
+        // }
+        // if (playerNum == 2) {
+        //     transform.position = new Vector3((PlayerPrefs.GetFloat("2x")), 
+        //     (PlayerPrefs.GetFloat("p2y")),(PlayerPrefs.GetFloat("p2z")));
+        // }
+        // if (playerNum == 3) {
+        //     transform.position = new Vector3((PlayerPrefs.GetFloat("p3x")), 
+        //     (PlayerPrefs.GetFloat("p3y")),(PlayerPrefs.GetFloat("p3z")));
+        // }
+        // if (playerNum == 4) {
+        //     transform.position = new Vector3((PlayerPrefs.GetFloat("p4x")), 
+        //     (PlayerPrefs.GetFloat("p4y")),(PlayerPrefs.GetFloat("p4z")));
+        // }
         this.target = currTile.GetComponent<tileHolder>().nextTile;
         currTile.GetComponent<tileHolder>().isOccupied--;
 
@@ -94,12 +113,13 @@ while (turn) {
         PlayerPrefs.SetFloat("p"+playerNum+"y", transform.position.y);
         PlayerPrefs.SetFloat("p"+playerNum+"z", transform.position.z);
         print("Player " + playerNum + " set");
+        PlayerPrefs.SetInt("round", PlayerPrefs.GetInt("round") + 1);
 
         turn = false;
     }
 
     checkTileAction(currTile);
-    this.currTile = currTile;
+   // this.currTile = currTile;
     round = false;
     GameObject.Find("GameMaster").GetComponent<gameMaster>().y ++;
    
