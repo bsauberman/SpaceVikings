@@ -13,11 +13,11 @@ public class roverMovement : MonoBehaviour
     public int laps = 0;
 
     // Start is called before the first frame update
-    IEnumerator Start()
+    void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-        yield return new WaitForSeconds(2);
-        GameObject.Find("GameMaster").GetComponent<gameMaster>().y = 6;
+        // yield return new WaitForSeconds(2);
+        //GameObject.Find("GameMaster").GetComponent<gameMaster>().y = 6;
 
     }
 
