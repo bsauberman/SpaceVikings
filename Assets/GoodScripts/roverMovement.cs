@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class roverMovement : MonoBehaviour
 {
-    public int playerNum = 0;
+    public int playerNum;
     public float speed = 10.0f;
     public float rotationSpeed = 100.0f;
     private float upThrust = 4f;
