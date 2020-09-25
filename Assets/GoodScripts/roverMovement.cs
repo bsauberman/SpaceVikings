@@ -24,6 +24,9 @@ public class roverMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.L)){
+            print("Fire");
+        }
         float translation = Input.GetAxis("P"+playerNum+"Y") * speed;
         print(Input.GetAxis("P"+playerNum+"Y"));
         float rotation = Input.GetAxis("P"+playerNum+"X") * rotationSpeed;

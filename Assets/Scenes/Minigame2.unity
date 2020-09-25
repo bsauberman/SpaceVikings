@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPos: {fileID: 234531488}
-  spawnee: {fileID: 6414864683172228867, guid: 0b248b01742024021931504d871403ae, type: 3}
+  spawnee: {fileID: 8369954012246166625, guid: 7079625d7ade3f24fb866572a8d8143c, type: 3}
 --- !u!1 &2116550669
 GameObject:
   m_ObjectHideFlags: 0
