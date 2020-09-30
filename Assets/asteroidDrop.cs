@@ -10,12 +10,24 @@ public class asteroidDrop : MonoBehaviour
     int number = 0;
     string spawnChoice;
 
+    public GameObject player1;
+
     int i;
 
 
     // Start is called before the first frame update
     void Start()
     {
+       // GameObject player1 = GameObject.Find("player1");    
+        GameObject player2 = GameObject.Find("player2");
+        GameObject player3 = GameObject.Find("player3");
+        GameObject player4 = GameObject.Find("player4");
+        GameObject p1Pos = GameObject.Find("p1Pos");
+        GameObject p2Pos = GameObject.Find("p2Pos");
+        GameObject p3Pos = GameObject.Find("p3Pos");
+        GameObject p4Pos = GameObject.Find("p4Pos");
+
+        Instantiate(player1, p1Pos.transform.position, p1Pos.transform.rotation);
 
     }
 
