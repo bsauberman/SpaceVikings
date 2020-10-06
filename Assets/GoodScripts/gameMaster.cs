@@ -66,17 +66,17 @@ public class gameMaster : MonoBehaviour
 
     void LoadGameStuff(GameObject player1, GameObject player2, 
     GameObject player3, GameObject player4) {
-        player1.transform.position = new Vector3((PlayerPrefs.GetFloat("p1x", 0)), 
-            (PlayerPrefs.GetFloat("p1y", 0)),(PlayerPrefs.GetFloat("p1z", 28)));
+        player1.transform.position = new Vector3((PlayerPrefs.GetFloat("p1x", 5)), 
+            (PlayerPrefs.GetFloat("p1y", 16)),(PlayerPrefs.GetFloat("p1z", -142)));
 
-        player2.transform.position = new Vector3((PlayerPrefs.GetFloat("p2x", -4)), 
-            (PlayerPrefs.GetFloat("p2y", 0)),(PlayerPrefs.GetFloat("p2z", 28)));                                                                             
+        player2.transform.position = new Vector3((PlayerPrefs.GetFloat("p2x", -2)), 
+            (PlayerPrefs.GetFloat("p2y", 16)),(PlayerPrefs.GetFloat("p2z", -142)));                                                                             
 
-        player3.transform.position = new Vector3((PlayerPrefs.GetFloat("p3x", -6)), 
-            (PlayerPrefs.GetFloat("p3y", 0)),(PlayerPrefs.GetFloat("p3z", 28)));
+        player3.transform.position = new Vector3((PlayerPrefs.GetFloat("p3x", -5)), 
+            (PlayerPrefs.GetFloat("p3y", 16)),(PlayerPrefs.GetFloat("p3z", -142)));
 
          player4.transform.position = new Vector3((PlayerPrefs.GetFloat("p4x", -8)), 
-            (PlayerPrefs.GetFloat("p4y", 0)),(PlayerPrefs.GetFloat("p4z", 28)));
+            (PlayerPrefs.GetFloat("p4y", 16)),(PlayerPrefs.GetFloat("p4z", -142)));
     }
 
     void LoadMiniGame() {

@@ -22,58 +22,15 @@ public class Try3Movement : MonoBehaviour
     public GameObject target;
     public int playerNum = 0;
 
-    // static GameObject cPlayer1; 
-    // static GameObject cPlayer2; 
-    // static GameObject cPlayer3; 
-    // static GameObject cPlayer4; 
-
 
     // Start is called before the first frame update
     IEnumerator Start() 
     {
-        if (PlayerPrefs.GetInt("round") == 0) {
-            PlayerPrefs.DeleteAll();
+        coins = PlayerPrefs.GetInt("p"+playerNum+"coins");
+        yield return new WaitForSeconds(1);
+        if (this.currTile == null) {
+            this.currTile = GameObject.Find("startingBlock");
         }
-        // if(cPlayer1 == null) {
-        //     cPlayer1 = this.gameObject;
-        //     GameObject.DontDestroyOnLoad(this.gameObject);
-
-        // }
-        // else if (cPlayer2 == null) {
-        //     cPlayer2 = this.gameObject;
-        //     GameObject.DontDestroyOnLoad(this.gameObject);
-
-        // }
-        // else if (cPlayer3 == null) {
-        //     cPlayer3 = this.gameObject;
-        //     GameObject.DontDestroyOnLoad(this.gameObject);
-
-        // }
-        // else if (cPlayer4 == null) {
-        //     cPlayer4 = this.gameObject;
-        //     GameObject.DontDestroyOnLoad(this.gameObject);
-        // }
-        // else {
-        //     Destroy(this.gameObject);
-        // }
-                
-        // DontDestroyOnLoad(this.gameObject);
-        // if (playerNum == 1) {
-        //     transform.position = new Vector3((PlayerPrefs.GetFloat("p1x")), 
-        //     (PlayerPrefs.GetFloat("p1y")),(PlayerPrefs.GetFloat("p1z")));
-        // }
-        // if (playerNum == 2) {
-        //     transform.position = new Vector3((PlayerPrefs.GetFloat("2x")), 
-        //     (PlayerPrefs.GetFloat("p2y")),(PlayerPrefs.GetFloat("p2z")));
-        // }
-        // if (playerNum == 3) {
-        //     transform.position = new Vector3((PlayerPrefs.GetFloat("p3x")), 
-        //     (PlayerPrefs.GetFloat("p3y")),(PlayerPrefs.GetFloat("p3z")));
-        // }
-        // if (playerNum == 4) {
-        //     transform.position = new Vector3((PlayerPrefs.GetFloat("p4x")), 
-        //     (PlayerPrefs.GetFloat("p4y")),(PlayerPrefs.GetFloat("p4z")));
-        // }
         this.target = currTile.GetComponent<tileHolder>().nextTile;
         currTile.GetComponent<tileHolder>().isOccupied--;
 
@@ -119,8 +76,8 @@ while (turn) {
     }
 
     checkTileAction(currTile);
-   // this.currTile = currTile;
     round = false;
+    PlayerPrefs.SetInt("p"+playerNum+"coins", coins);
     GameObject.Find("GameMaster").GetComponent<gameMaster>().y ++;
    
 }
@@ -129,8 +86,11 @@ while (turn) {
 
 private void checkTileAction(GameObject currTile) {
 
-    if (currTile.tag == "Tile") {
+    if (currTile.tag == "Blue") {
         coins = coins + 3;
+    }
+    if (currTile.tag == "Red") {
+        coins = coins - 3;
     }
 
 
