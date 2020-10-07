@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Tile
   - Mystery
+  - Blue
+  - Red
   layers:
   - Default
   - TransparentFX

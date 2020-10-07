@@ -22,6 +22,8 @@ public class Try3Movement : MonoBehaviour
     public GameObject target;
     public int playerNum = 0;
 
+    public GameObject coinFX;
+
 
     // Start is called before the first frame update
     IEnumerator Start() 
@@ -87,10 +89,14 @@ while (turn) {
 private void checkTileAction(GameObject currTile) {
 
     if (currTile.tag == "Blue") {
+        Instantiate(coinFX, this.transform.position, this.transform.rotation);
         coins = coins + 3;
     }
     if (currTile.tag == "Red") {
         coins = coins - 3;
+        if (coins < 0) {
+            coins = 0;
+        }
     }
 
 
