@@ -10,8 +10,11 @@ public class doink : MonoBehaviour
     {
         PlayerPrefs.SetInt("round", 0);
         PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene("GameBoard");
         
+    }
+
+    public void Loadscene(){
+        SceneManager.LoadScene("GameBoard");
     }
 
     // Update is called once per frame
