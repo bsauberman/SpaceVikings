@@ -17,6 +17,11 @@ public class doink : MonoBehaviour
         SceneManager.LoadScene("GameBoard");
     }
 
+    public void QuitGame() {
+        Debug.Log("Quit!!!!");
+        Application.Quit();
+    }
+
     // Update is called once per frame
     void Update()
     {
