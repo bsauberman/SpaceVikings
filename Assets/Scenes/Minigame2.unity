@@ -521,22 +521,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1932890611}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1432069763
+--- !u!114 &1432069764
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1432069762}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b414700c173843dbb9962f6ccad2072, type: 3}
+  m_Script: {fileID: 11500000, guid: ea9154b3d78f5442aa185f1d0fa2aa83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNum: 0
-  speed: 10
-  rotationSpeed: 100
-  laps: 0
 --- !u!1 &1658979128
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,7 +603,7 @@ PrefabInstance:
     - target: {fileID: 7966037750043560640, guid: 298b95a2e4e7c43bdbaf372a48406365,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7966037750043560641, guid: 298b95a2e4e7c43bdbaf372a48406365,
         type: 3}
@@ -686,6 +682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7966037750043560645, guid: 298b95a2e4e7c43bdbaf372a48406365, type: 3}
+    - {fileID: 7966037750043560640, guid: 298b95a2e4e7c43bdbaf372a48406365, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 298b95a2e4e7c43bdbaf372a48406365, type: 3}
 --- !u!1 &1950021366
 GameObject:
