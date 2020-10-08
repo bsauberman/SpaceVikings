@@ -16,8 +16,8 @@ public class game3Move : MonoBehaviour
     void Update()
     {
         Vector3 moveVector = Vector3.zero;
-        moveVector.x = -(Input.GetAxis("Horizontal")) * 5;
-        moveVector.z = -(Input.GetAxis("Vertical")) * 5;
+        moveVector.x = -(Input.GetAxis("Horizontal")) * 3;
+        moveVector.z = (Input.GetAxis("Vertical")) * 3;
 
         controller.Move(moveVector * Time.deltaTime);
         
