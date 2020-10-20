@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class gameMaster : MonoBehaviour
 {
 
     public int turnVariable = 1;
     public int y = 1;
+
+    public Text minigameUI;
+    int minigameSelection;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +58,8 @@ public class gameMaster : MonoBehaviour
     if (turnVariable == 5) {
         player4.GetComponent<Try3Movement>().enabled = false;
         player4Camera.GetComponent<Camera>().enabled = false;
+        minigameSelection = Random.Range(1,3);
+        minigameUI.text = "Mini Game " + minigameSelection + " Chosen";
         Invoke ("LoadMiniGame", 1.0f);
     }
     if (turnVariable == 6) {
@@ -80,7 +86,7 @@ public class gameMaster : MonoBehaviour
     }
 
     void LoadMiniGame() {
-        SceneManager.LoadScene("Minigame1");
+        SceneManager.LoadScene("Minigame" + minigameSelection);
     }
     void LoadGameBoard() {
         SceneManager.LoadScene("GameBoard");
