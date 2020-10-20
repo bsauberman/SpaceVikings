@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class characterSelect : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class characterSelect : MonoBehaviour
     public GameObject cube;
 
     public GameObject rover;
+
+    public int playerNum;
 
     public int characterInt = 1;
     // Start is called before the first frame update
@@ -86,9 +89,18 @@ public class characterSelect : MonoBehaviour
 
     }
 
+    public void Confirm(){
+        PlayerPrefs.SetInt("p"+playerNum+"Char", characterInt);
+        Debug.Log("Player 1 Set");
+    }
+
     // Update is called once per frame
     void Update()
     {
+
+        if (PlayerPrefs.GetInt("p1Char") == 1) {
+            SceneManager.LoadScene("GameBoard");
+        }
         
     }
 }

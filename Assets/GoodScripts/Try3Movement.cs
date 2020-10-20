@@ -1,10 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [DisallowMultipleComponent]
 public class Try3Movement : MonoBehaviour
 {
+    public GameObject viking;
+    public GameObject cube;
+
+    public GameObject rover;
 
     public int diceRoll;
     public bool round = true;
@@ -18,17 +23,25 @@ public class Try3Movement : MonoBehaviour
     [SerializeField] public int dirChoice = 0;
 
     public GameObject currTile;
-    public float speed = 7.0f;
+    public float speed = 50.0f;
     public GameObject target;
     public int playerNum = 0;
 
     public GameObject coinFX;
 
+    public Text DiceUI;
+
 
     // Start is called before the first frame update
     IEnumerator Start() 
     {
+        DiceUI.text = "Press 'A' to roll dice block";
+        //characterRender();
         coins = PlayerPrefs.GetInt("p"+playerNum+"coins");
+        print("Press A to roll dice block");
+        yield return waitForKeyPress(KeyCode.A);
+        diceRoll = Random.Range(1,10);
+        DiceUI.text = "DiceRoll: " + diceRoll;
         yield return new WaitForSeconds(1);
         if (this.currTile == null) {
             this.currTile = GameObject.Find("startingBlock");
@@ -80,6 +93,7 @@ while (turn) {
     checkTileAction(currTile);
     round = false;
     PlayerPrefs.SetInt("p"+playerNum+"coins", coins);
+    DiceUI.text = "";
     GameObject.Find("GameMaster").GetComponent<gameMaster>().y ++;
    
 }
@@ -89,7 +103,7 @@ while (turn) {
 private void checkTileAction(GameObject currTile) {
 
     if (currTile.tag == "Blue") {
-        Instantiate(coinFX, this.transform.position, this.transform.rotation);
+       // Instantiate(coinFX, this.transform.position, this.transform.rotation);
         coins = coins + 3;
     }
     if (currTile.tag == "Red") {
@@ -115,6 +129,30 @@ private void checkTileAction(GameObject currTile) {
         yield return null; 
     }
  
+}
+
+private void characterRender(){
+    switch (PlayerPrefs.GetInt("p"+playerNum+"Char")){
+
+            case 1: 
+            viking.SetActive(false);
+            cube.SetActive(false);
+            rover.SetActive(true);
+            break;
+            case 2:
+            viking.SetActive(true);
+            cube.SetActive(false);
+            rover.SetActive(false);
+            break;
+            case 3:
+            viking.SetActive(false);
+            cube.SetActive(true);
+            rover.SetActive(false);
+            break;
+            default:
+            viking.SetActive(true);
+            break;
+    }
 }
  
 

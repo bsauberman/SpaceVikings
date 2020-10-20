@@ -295,6 +295,7 @@ MonoBehaviour:
   viking: {fileID: 1740551878}
   cube: {fileID: 2070098044}
   rover: {fileID: 262317207}
+  playerNum: 2
   characterInt: 1
 --- !u!1 &219874074
 GameObject:
@@ -1049,6 +1050,7 @@ MonoBehaviour:
   viking: {fileID: 713198866}
   cube: {fileID: 1721873399}
   rover: {fileID: 1617760268}
+  playerNum: 4
   characterInt: 1
 --- !u!1 &383485169
 GameObject:
@@ -1904,7 +1906,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910324670}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 416945f616a474c5486adeb70103ef5b, type: 3}
   m_Name: 
@@ -1912,6 +1914,7 @@ MonoBehaviour:
   viking: {fileID: 1530499265}
   cube: {fileID: 1727663464}
   rover: {fileID: 255587015}
+  playerNum: 0
   characterInt: 0
 --- !u!1 &927900739
 GameObject:
@@ -3748,6 +3751,7 @@ MonoBehaviour:
   viking: {fileID: 1530499265}
   cube: {fileID: 1727663464}
   rover: {fileID: 255587015}
+  playerNum: 1
   characterInt: 1
 --- !u!1 &1810541228
 GameObject:
@@ -3804,6 +3808,7 @@ MonoBehaviour:
   viking: {fileID: 450655320}
   cube: {fileID: 2105204054}
   rover: {fileID: 1057223706}
+  playerNum: 3
   characterInt: 1
 --- !u!1 &1929841909
 GameObject:
