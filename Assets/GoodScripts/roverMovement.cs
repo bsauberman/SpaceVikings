@@ -40,9 +40,10 @@ public class roverMovement : MonoBehaviour
         transform.Rotate(0,rotation,0);
 
         if (this.transform.position.y <= 23) {
-            this.transform.rotation = (spawnpos.transform.rotation);
+            rigidbody.constraints = RigidbodyConstraints.FreezePosition;
             this.transform.position = (spawnpos.transform.position);
             this.transform.rotation = (spawnpos.transform.rotation);
+            rigidbody.constraints = RigidbodyConstraints.None;
         }
 
        /* if(Input.GetButton("Fire1")) {
