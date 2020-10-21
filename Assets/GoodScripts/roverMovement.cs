@@ -12,12 +12,15 @@ public class roverMovement : MonoBehaviour
     Rigidbody rigidbody;
     public int laps = 0;
 
+    GameObject spawnpos;
+
     // Start is called before the first frame update
-    IEnumerator Start()
+    void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
-        yield return new WaitForSeconds(2);
-        GameObject.Find("GameMaster").GetComponent<gameMaster>().y = 6;
+       // yield return new WaitForSeconds(2);
+        spawnpos = GameObject.Find("p"+playerNum+"spawnpos");
+       // GameObject.Find("GameMaster").GetComponent<gameMaster>().y = 6;
 
     }
 
@@ -35,6 +38,12 @@ public class roverMovement : MonoBehaviour
         rotation *= Time.deltaTime;
         transform.Translate(translation,0,0);
         transform.Rotate(0,rotation,0);
+
+        if (this.transform.position.y <= 23) {
+            this.transform.rotation = (spawnpos.transform.rotation);
+            this.transform.position = (spawnpos.transform.position);
+            this.transform.rotation = (spawnpos.transform.rotation);
+        }
 
        /* if(Input.GetButton("Fire1")) {
             this.rigidbody.AddRelativeForce(Vector3.left * upThrust);
