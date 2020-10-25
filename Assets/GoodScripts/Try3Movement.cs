@@ -11,6 +11,8 @@ public class Try3Movement : MonoBehaviour
 
     public GameObject rover;
 
+    public GameObject DiceBlock;
+
     public int diceRoll;
     public bool round = true;
         
@@ -31,15 +33,22 @@ public class Try3Movement : MonoBehaviour
 
     public Text DiceUI;
 
+    public GameObject pdice;
+
 
     // Start is called before the first frame update
     IEnumerator Start() 
     {
         DiceUI.text = "Press 'A' to roll dice block";
+        pdice.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + 15, this.transform.position.z);
         //characterRender();
         coins = PlayerPrefs.GetInt("p"+playerNum+"coins");
         print("Press A to roll dice block");
+        Instantiate(DiceBlock, pdice.transform.position, this.transform.rotation);
+       // DiceBlock.SetActive(true);
         yield return waitForKeyPress(KeyCode.A);
+       // DiceBlock.SetActive(false);
+        //Destroy(DiceBlock);
         diceRoll = Random.Range(1,10);
         DiceUI.text = "DiceRoll: " + diceRoll;
         yield return new WaitForSeconds(1);
@@ -103,7 +112,8 @@ while (turn) {
 private void checkTileAction(GameObject currTile) {
 
     if (currTile.tag == "Blue") {
-       // Instantiate(coinFX, this.transform.position, this.transform.rotation);
+
+        Instantiate(coinFX, this.transform.position, this.transform.rotation);
         coins = coins + 3;
     }
     if (currTile.tag == "Red") {
